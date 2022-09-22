@@ -1,4 +1,3 @@
-
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Iterator;
@@ -16,7 +15,6 @@ public class Demo {
     private static final int[] arrayToSort = new int[]{0, -9, 5, 2, -7, 1};
     private static final Stream<Integer> stream1 = Stream.of(1, 5, 3);
     private static final Stream<Integer> stream2 = Stream.of(4, 6);
-
 
     public static void main(String[] args) {
         /*task1*/
