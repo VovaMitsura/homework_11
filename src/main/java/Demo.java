@@ -39,7 +39,7 @@ public class Demo {
         System.out.println("------TASK5------");
         BiFunction<Integer, Integer, String> zipFunction = (integer, integer2) -> integer + " " + integer2;
 
-        task5(stream1, stream2, zipFunction)
+        zip(stream1, stream2, zipFunction)
                 .forEach(s -> System.out.print(s + " "));
 
     }
@@ -70,7 +70,7 @@ public class Demo {
                 .boxed();
     }
 
-    public static <T, V> Stream<V> task5(Stream<T> first, Stream<T> second, BiFunction<T, T, V> zipFunction) {
+    public static <T, V> Stream<V> zip(Stream<T> first, Stream<T> second, BiFunction<T, T, V> zipFunction) {
         Iterator<T> firstIterator = first.iterator();
         Iterator<T> secondIterator = second.iterator();
 
